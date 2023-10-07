@@ -32,7 +32,7 @@ function App() {
       {/* Header */}
       <div className="Header">
         
-        <h1>Trip Music Playlist</h1>
+        <h1>Trip Music Planner</h1>
       </div>
 
       {/* Generate Route from TravelInput */}
