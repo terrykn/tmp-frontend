@@ -4,3 +4,8 @@
 .Header {
   text-align: center;
 }
+.Footer {
+  margin-left: 44vw;
+  margin-top: 5;
+  display: flex;
+}
