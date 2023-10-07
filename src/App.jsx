@@ -6,7 +6,6 @@ import TravelOutput from './components/TravelOutput';
 
 import { useState } from 'react';
 
-
 function App() {
   const [travelData, setTravelData] = useState({
     start: "N/A",

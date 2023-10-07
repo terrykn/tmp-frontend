@@ -11,6 +11,7 @@ const TravelInput = ({ onGenerateRoute }) => {
     const fromOptions = ["Option 1", "Option 2", "Option 3"]; 
     const destinationOptions = ["Option A", "Option B", "Option C"];
 
+    
     const handleFromMenuOpen = (event) => {
         setFromMenuAnchor(event.currentTarget);
     };

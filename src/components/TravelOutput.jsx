@@ -16,7 +16,7 @@ const TravelOutput = (props) => {
     const start = props.start
     const end = props.end
 
-    const [playlist, setPlaylist] = useState(["1. Choose your starting and ending locations.", "2. Click GO to find out your estimated travel time.", "3. Generate a music playlist for your trip!"]);
+    const [playlist, setPlaylist] = useState(["1. Choose your starting and ending stops.", "2. Click GO to find out your estimated travel time.", "3. Generate a music playlist for your trip!"]);
 
     const generateRandomPlaylist = (duration) => {
         const songs = [
@@ -27,7 +27,7 @@ const TravelOutput = (props) => {
         ]
 
         const generatedPlaylist = [];
-        generatedPlaylist.push(songs[0]);
+            generatedPlaylist.push(songs[0]);
         return generatedPlaylist;
     }
 
@@ -42,8 +42,8 @@ const TravelOutput = (props) => {
         <div>
             <div>
                 <Card variant="outlined" sx={{ marginTop: '5vh', marginBottom: '5vh', marginLeft: '30vw', marginRight: '30vw', padding: 2, textAlign: 'left'}}>
-                    <p className="TravelOutputItem"><PinDropIcon sx={{ marginRight: .5 }}/> Starting location: {start}</p>
-                    <p className="TravelOutputItem"><FlagIcon sx={{ marginRight: .5 }} /> Ending location: {end}</p>
+                    <p className="TravelOutputItem"><PinDropIcon sx={{ marginRight: .5 }}/> Starting stop: {start}</p>
+                    <p className="TravelOutputItem"><FlagIcon sx={{ marginRight: .5 }} /> Ending stop: {end}</p>
                     <p className="TravelOutputItem"><AccessAlarmIcon sx={{ marginRight: .5 }}/> Estimated travel time: {travelTime} minutes</p>
                 </Card>
             </div>
